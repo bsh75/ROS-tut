@@ -4,7 +4,7 @@ from turtlesim.msg import Pose
 
 def pose_callback(msg: Pose):  #  ": Pose just tells us that the message is of type 'Pose' which allows for intellisense to work"
     """Callback function: run everytime subscriber picks up a message"""
-    rospy.loginfo(f"({msg.x} , {msg.y})")
+    rospy.loginfo(f"({msg.x} , {msg.y}) ({msg.linear_velocity} , {msg.angular_velocity})")
     
 
 if __name__ == '__main__':
