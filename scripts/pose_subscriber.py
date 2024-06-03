@@ -8,7 +8,7 @@ def pose_callback(msg: Pose):  #  ": Pose just tells us that the message is of t
     
 
 if __name__ == '__main__':
-    rospy.init_node("turle_pose_subscriber")
+    rospy.init_node("turtle_pose_subscriber")
 
     sub = rospy.Subscriber("/turtle1/pose", Pose, callback=pose_callback)
 
